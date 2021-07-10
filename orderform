@@ -1,0 +1,393 @@
+ 
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>UglyCookie</title>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<style>
+		@font-face {
+    font-family: 'IM_Hyemin-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+		*{
+			font-family: 'IM_Hyemin-Regular';
+		}
+		p{
+			font-size:20px;
+		}
+		h1{
+			font-size:60px;
+			margin-top:0px;
+			text-align:center;
+		}
+		h3{
+			font-size:32px;
+		}
+		html{
+			background-color:#634e41;
+		}
+		#container{
+			background-color:#ffffff;
+			box-shadow:1px 1px 5px 5px #9fa6a1;
+		width:870px;
+			margin:auto;
+			margin-top:50px;
+			margin-bottom:50px;
+			padding:3px;
+		}
+		#cok{
+			border: 2px solid;
+			width:790px;
+			margin:auto;
+			margin-top:10px;
+			padding:30px;
+			border-radius:15px;
+		}
+		#cok lable{
+			font-weight:bold;
+			font-size:27px;
+		}
+		textarea{
+			width:600px;
+			height:210px;
+			font-size:27px;
+			resize:none;
+		}
+		input{
+			font-size:27px;
+		}
+		#inin{
+			width:250px;
+			height:30px;
+		}
+		input[type=checkbox]{
+			width:30px;
+			height: 25px;
+		}
+		.btn {
+	background-color:#634e41;
+	border-radius:15px;
+	border: 0;
+	text-indent:0;
+	display:inline-block;
+	color:#ffffff;
+	font-size:25px;;
+	font-weight:bold;
+	font-style:normal;
+	height:70px;
+	line-height:70px;
+	width:150px;
+	text-decoration:none;
+	text-align:center;
+	margin-bottom:20px;
+}
+.btn:hover {background-color:#b2b8c2}
+.btn:active {
+  background-color: #ffffff;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+.findbtn {
+	background-color:#fffac4;
+	border-radius:15px;
+	border: 0;
+	text-indent:0;
+	display:inline-block;
+	color:#394352;
+	font-size:20px;;
+	font-weight:bold;
+	font-style:normal;
+	height:45px;
+	line-height:45px;
+	width:160px;
+	text-decoration:none;
+	text-align:center;
+	margin-bottom:20px;
+}
+.findbtn:hover {background-color:#b2b8c2}
+.findbtn:active {
+  background-color: #ffffff;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+		}
+		.closebtn {
+	background-color:black;
+	border-radius:15px;
+	border: 0;
+	text-indent:0;
+	display:inline-block;
+	color:#ffffff;
+	font-size:20px;;
+	font-weight:bold;
+	font-style:normal;
+	height:40px;
+	line-height:40px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	margin-bottom:20px;
+}
+#logo{
+	box-shadow:1px 1px 5px 5px #9fa6a1;
+	object-fit: contain;
+	width:110px;
+	height:110px;
+	border: 0;
+	border-radius:45px;
+    float:right;
+	bottom: 0px;
+		}
+		.item{
+			border:none;
+			font-size:25px;
+			width:400px;
+			margin-right: 45px;
+		}
+input[type=number]{
+			width:50px;
+	height: 35px;
+	line-height:35px;
+	margin-bottom: 11px;
+	text-align:center;
+		}
+		span{
+			font-size:19px;
+		}
+		.swal-text {
+    		font-size:30px;
+			font-weight:bold;
+			margin-top: 100px;
+}
+		.swal-modal {
+			width:700px;
+			height:200px;
+		}
+		.swal-button {
+			width:150px;
+			height:70px;
+    		font-size: 21px;
+}
+		a{
+			font-size:20px;
+		}
+	</style>
+	<meta name="viewport" content=" user-scalable=no">
+</head>
+<body>
+
+<div id="container">
+  <form action="https://millim.run.goorm.io/cookie/order" method="POST" >
+	  <div id="cok">
+		  <h1>
+	우리 가게 주문서 만들기<br>(제작의뢰서)
+	</h1>
+	<h3>
+		네이버 폼에 없는<br>
+"주문이 들어오면 알림받기, 주문항목 선택시 자동 계산"<br> 기능을 가진 주문서를 무료로 만들어드립니다.
+	</h3>
+		  <p>
+			  "우리 가게 주문서 만들기"는 인스타마켓 같은 소규모 마켓의 주문서를 제작해드립니다!<br><br>
+			 <b>[주문서제작과정]</b><br>
+			  1. 제작의뢰서 작성<br>
+			  2. 제작시 필요한 내용 템플릿 작성(작성해주신 핸드폰 번호로 URL을 보내드립니다.)<br>
+			  3. 주문서 제작<br><br>
+			  제작하는데 걸리는 시간은 3일~5일정도 걸립니다.<br>
+			  주문내역은 이메일로 전송되므로 이메일 알림을 꼭 켜주시기 바랍니다 :)
+		  </p>
+		  <a href="https://uglycookie.netlify.app/">이미 만들어진 보기</a>
+	<hr style="width:780px;">
+		 
+	  <lable style="color:#634e41;font-size:35px;">정보입력</lable><br><br>
+	  <lable>의뢰자 이름</lable><br>
+		  <p style="margin-top: 0px;margin-bottom: 0px;font-size:20px;">
+	의뢰하신 분의 성함을 적어주세요!<br>ex) 홍길동
+		  </p><br>
+	  <input type="text" id="inin" name="username" style="width:450px;height:45px;" required><br><br>
+		  <lable>의뢰 업체 이름</lable><br>
+		  <p style="margin-top: 0px;margin-bottom: 0px;font-size:20px;">
+	주문서를 사용할 가게명을 적어주세요!<br>ex) 동대문 엽기OOO
+		  </p><br>
+	  <input type="text" id="inin" name="username" style="width:450px;height:45px;" required><br><br>
+	  <lable>핸드폰 번호</lable><br>
+		   <p style="margin-top: 0px;margin-bottom: 0px;font-size:20px;">
+	제작과정에서 연락을 통해서 수정과 업데이트가 이루어질 예정입니다!<br> 연락이 가능한 휴대전화 번호를 알려주세요!
+		  </p><br>
+	  <input type="text" id="inin" name="phone" style="width:450px;height:45px;" onKeyup="inputPhoneNumber(this);" maxlength="13" required><br><br>
+	  <hr><br>
+	  <lable> 개인정보 수집 및 이용 동의</lable>
+	  <p>
+		  "주문서 제작을 위해 위에 입력된 개인정보를 수집합니다. 수집한 개인정보는 이외의 목적으로는 사용하지 않으며, 주문서 제작 완료 즉시 파기합니다. 개인정보의 수집 및 이용에 대한 동의를 거부할 수 있으며, 이 경우 상품 주문이 어려울 수 있습니다."
+	  </p>
+		  <p><input type="checkbox" style="width:25px;height:25px;" name="informagree" required>개인정보 수집 및 이용에 동의합니다.</p><br>
+	  <button type="submit"  class="btn">
+		  요청하기
+	  </button>
+		  <img src="https://millim.s3.ap-northeast-2.amazonaws.com/original/%EC%9A%B0%EC%A3%BC%EB%A7%8C.png" alt="로고이미지오류" id="logo" onclick="thank()"><br>
+		  </div>
+	</form>
+		
+	</div>
+				
+	<script>
+	function itemSum(frm)
+{
+   var sum = 0;
+   var count = frm.cookie.length;
+	var ary = [];
+   for(var i=0; i < count; i++ ){
+       if( frm.cookie[i].checked == true ){
+	    sum += parseInt(frm.cookie[i].value)*frm.qunt[i].value;
+		ary += frm.cookiename[i].value + ' - ' + frm.qunt[i].value + "개"+ "\r\n";
+       }
+   }
+   frm.total_sum.value = sum;
+	frm.ordered.value = ary;
+}
+	</script>
+<div id="layer" style="display:none;position:fixed;overflow:hidden;z-index:1;-webkit-overflow-scrolling:touch;">
+<img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnCloseLayer" style="cursor:pointer;position:absolute;right:-3px;top:47px;z-index:1;width:30px;height:30px;" onclick="closeDaumPostcode()" alt="닫기 버튼">
+</div>
+
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+    // 우편번호 찾기 화면을 넣을 element
+    var element_layer = document.getElementById('layer');
+
+    function closeDaumPostcode() {
+        // iframe을 넣은 element를 안보이게 한다.
+        element_layer.style.display = 'none';
+    }
+
+    function sample2_execDaumPostcode() {
+        new daum.Postcode({
+            oncomplete: function(data) {
+                // 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                var addr = ''; // 주소 변수
+                var extraAddr = ''; // 참고항목 변수
+
+                //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                    addr = data.roadAddress;
+                } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                    addr = data.jibunAddress;
+                }
+
+                // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+                if(data.userSelectedType === 'R'){
+                    // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                    // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                        extraAddr += data.bname;
+                    }
+                    // 건물명이 있고, 공동주택일 경우 추가한다.
+                    if(data.buildingName !== '' && data.apartment === 'Y'){
+                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                    }
+                    // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                    if(extraAddr !== ''){
+                        extraAddr = ' (' + extraAddr + ')';
+                    }
+                    // 조합된 참고항목을 해당 필드에 넣는다.
+                    document.getElementById("sample2_extraAddress").value = extraAddr;
+                
+                } else {
+                    document.getElementById("sample2_extraAddress").value = '';
+                }
+
+                // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                document.getElementById('sample2_postcode').value = data.zonecode;
+                document.getElementById("sample2_address").value = addr;
+                // 커서를 상세주소 필드로 이동한다.
+                document.getElementById("sample2_detailAddress").focus();
+
+                // iframe을 넣은 element를 안보이게 한다.
+                // (autoClose:false 기능을 이용한다면, 아래 코드를 제거해야 화면에서 사라지지 않는다.)
+                element_layer.style.display = 'none';
+            },
+            width : '100%',
+            height : '100%',
+            maxSuggestItems : 5
+        }).embed(element_layer);
+
+        // iframe을 넣은 element를 보이게 한다.
+        element_layer.style.display = 'block';
+
+        // iframe을 넣은 element의 위치를 화면의 가운데로 이동시킨다.
+        initLayerPosition();
+    }
+
+    // 브라우저의 크기 변경에 따라 레이어를 가운데로 이동시키고자 하실때에는
+    // resize이벤트나, orientationchange이벤트를 이용하여 값이 변경될때마다 아래 함수를 실행 시켜 주시거나,
+    // 직접 element_layer의 top,left값을 수정해 주시면 됩니다.
+    function initLayerPosition(){
+        var width = 500; //우편번호서비스가 들어갈 element의 width
+        var height = 700; //우편번호서비스가 들어갈 element의 height
+        var borderWidth = 5; //샘플에서 사용하는 border의 두께
+
+        // 위에서 선언한 값들을 실제 element에 넣는다.
+        element_layer.style.width = width + 'px';
+        element_layer.style.height = height + 'px';
+        element_layer.style.border = borderWidth + 'px solid';
+        // 실행되는 순간의 화면 너비와 높이 값을 가져와서 중앙에 뜰 수 있도록 위치를 계산한다.
+        element_layer.style.left = (((window.innerWidth || document.documentElement.clientWidth) - width)/2 - borderWidth) + 'px';
+        element_layer.style.top = (((window.innerHeight || document.documentElement.clientHeight) - height)/2 - borderWidth) + 'px';
+    }
+</script>
+	<script>
+	function inputPhoneNumber(obj) {
+    var number = obj.value.replace(/[^0-9]/g, "");
+    var phone = "";
+
+    if(number.length < 4) {
+        return number;
+    } else if(number.length < 7) {
+        phone += number.substr(0, 3);
+        phone += "-";
+        phone += number.substr(3);
+    } else if(number.length < 11) {
+        phone += number.substr(0, 3);
+        phone += "-";
+        phone += number.substr(3, 3);
+        phone += "-";
+        phone += number.substr(6);
+    } else {
+        phone += number.substr(0, 3);
+        phone += "-";
+        phone += number.substr(3, 4);
+        phone += "-";
+        phone += number.substr(7);
+    }
+    obj.value = phone;
+}
+	</script>
+	<script>
+	function thank(){
+		swal("무료로 우리 가게만의 주문서를 만들고 싶나요?", {
+  buttons: {
+    cancel: "괜찮아요",
+    catch: {
+      text: "지금 만들기",
+      value: "catch",
+    }
+  },
+})
+.then((value) => {
+  switch (value) {
+ 
+    case "catch":
+      document.location.href="/order";
+ 
+    default:
+     return;
+  }
+});
+		return;
+	}
+	</script>
+</body>
+</html>
