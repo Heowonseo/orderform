@@ -380,7 +380,7 @@ input[type=number]{
   switch (value) {
  
     case "catch":
-      document.location.href="/order";
+      document.location.href="https://orderspaceman.netlify.app/";
  
     default:
      return;
