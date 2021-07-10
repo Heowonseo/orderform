@@ -171,7 +171,7 @@ input[type=number]{
 		.swal-button {
 			width:150px;
 			height:70px;
-    		font-size: 19px;
+    		font-size: 21px;
 }
 		a{
 			font-size:23px;
@@ -187,6 +187,7 @@ input[type=number]{
 		  <h1>
 	우리 가게 주문서 만들기<br>(제작의뢰서)
 	</h1>
+		  <div id="des">
 	<h3>
 		네이버 폼에 없는<br>
 "주문이 들어오면 알림받기, 주문항목 선택시 자동 계산"<br> 기능을 가진 주문서를 무료로 만들어드립니다.
@@ -201,8 +202,12 @@ input[type=number]{
 			  주문내역은 이메일로 전송되므로 이메일 알림을 꼭 켜주시기 바랍니다 :)
 		  </p>
 		  <a href="https://uglycookie.netlify.app/">이미 만들어진 주문서 보기</a>
-	<hr style="width:780px;"><br>
-		 
+	<br><br>
+		  <button type="button"  class="btn" id="yes" onclick="show()">
+		  의뢰하기
+	  </button>
+		  </div>
+		 <div id="info" style="display:none">
 	  <lable style="color:#634e41;font-size:35px;">정보입력</lable><br><br>
 	  <lable>의뢰자 이름</lable><br>
 		  <p style="margin-top: 0px;margin-bottom: 0px;font-size:20px;">
@@ -229,6 +234,8 @@ input[type=number]{
 		  요청하기
 	  </button>
 		  <img src="https://millim.s3.ap-northeast-2.amazonaws.com/original/%EC%9A%B0%EC%A3%BC%EB%A7%8C.png" alt="로고이미지오류" id="logo" onclick="thank()"><br>
+		  </div>
+		  			 
 		  </div>
 	</form>
 		
@@ -283,6 +290,12 @@ input[type=number]{
   }
 });
 		return;
+	}
+	</script>
+	<script>
+	function show(){
+		document.getElementById("des").style.display ="none";
+		document.getElementById("info").style.display ="inline-block";
 	}
 	</script>
 </body>
