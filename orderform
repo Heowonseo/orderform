@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>UglyCookie</title>
+  <title>우주만(우리 가게 주문서 만들기)</title>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<style>
 		@font-face {
