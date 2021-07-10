@@ -37,8 +37,7 @@
 			box-shadow:1px 1px 5px 5px #9fa6a1;
 		width:870px;
 			margin:auto;
-			margin-top:50px;
-			margin-bottom:50px;
+			margin-top:150px;
 			padding:3px;
 		}
 		#cok{
@@ -233,6 +232,9 @@ input[type=number]{
 	  <button type="submit"  class="btn">
 		  요청하기
 	  </button>
+			 <button type="button"  class="btn" id="yes" onclick="noshow()">
+				 돌아가기
+			 </button>
 		  <img src="https://millim.s3.ap-northeast-2.amazonaws.com/original/%EC%9A%B0%EC%A3%BC%EB%A7%8C.png" alt="로고이미지오류" id="logo" onclick="thank()"><br>
 		  </div>
 		  			 
@@ -296,6 +298,12 @@ input[type=number]{
 	function show(){
 		document.getElementById("des").style.display ="none";
 		document.getElementById("info").style.display ="inline-block";
+	}
+	</script>
+	<script>
+	function noshow(){
+		document.getElementById("des").style.display ="inline-block";
+		document.getElementById("info").style.display ="none";
 	}
 	</script>
 </body>
